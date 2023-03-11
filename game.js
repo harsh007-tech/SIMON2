@@ -107,7 +107,9 @@ function checkAnswer(currentLevel) { //If the game has started.
     }
     //This cannot be done as we everytime empty the userPattern
     // for(var i=0;i<currentLevel;i++){
-    if (userClickedPattern[currentLevel] != gamePattern[currentLevel] && userClickedPattern.length !=0) {
+//     if (userClickedPattern[currentLevel] != gamePattern[currentLevel] && userClickedPattern.length !=0) {
+    
+    if (userClickedPattern[currentLevel] != gamePattern[currentLevel] && userClickedPattern.length == gamePattern.length && userClickedPattern.length !=0) {
       console.log("failure2");
       var wrong = new Audio("sounds\\wrong.mp3");
       wrong.play();
